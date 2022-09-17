@@ -6,28 +6,58 @@
 	<meta name="description" content="This is my first page using HTML5 and inline CSS">
 	<meta name="author" content="Julie Russell">
 
+	<script type="text/javascript">
+
+/*
+Block multiple form submission script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact for use
+*/
+
+//Enter error message to display if submit button has been pressed multiple times below.
+//Delete below line if you don't want a message displayed:
+
+var formerrormsg="You\'ve attempted to submit the form multiple times.\n Please reload page if you need to resubmit form."
+
+function checksubmit(submitbtn){
+submitbtn.form.submit()
+checksubmit=blocksubmit
+return false
+}
+
+function blocksubmit(){
+if (typeof formerrormsg!="undefined")
+alert(formerrormsg)
+return false
+}
+
+</script>
+
 </head>
 
-<body style="background-image: url('images/annie-spratt-pKpipZVVEC0-unsplash-lowres.jpg'); background-color:#a2c4c9;">
+<body style="background-image: url('images/45degreee_fabric.webp'); background-color:#eeeeee;">
 <header><h1 style="text-align:center;">What Is <em>Loren Ipsum</em> Anyway?</h1></header>
 
 <!-- ; border: 5px solid rosybrown;
+	url('images/annie-spratt-pKpipZVVEC0-unsplash-lowres.jpg');
+	background-color:#a2c4c9;
 	-->
 
-<h2 style="text-align: right; font-style:italic;">When I can't think of anything original, there's Loren Ipsum</h2>
+<h2 style="text-align: right; font-style:italic;">What to say when I don't know what to say:<br>Loren Ipsum</h2>
 
-<p><span style="font-size: 3em;">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<p><span style="font-size: 3em;">U</span>t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p><span style="font-size: 2em;">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><span style="font-size: 2em;">U</span>t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 <br>
 
-<footer style="background-image:url('images/wallpaper.jpeg'); background-repeat: repeat-x; background-position: top; border: 3px solid black;">
+<footer style="background-image:url('images/wallpaper.jpeg'); background-repeat: repeat-x; background-position: top; border: 1px solid black;">
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p>Justo laoreet sit amet cursus sit amet dictum. Enim nulla aliquet porttitor lacus.</p>
 <p>Mus mauris vitae ultricies leo. Accumsan lacus vel facilisis volutpat.</p>
 <p>Laoreet sit amet cursus sit amet dictum sit amet.</p>
 </footer>
+
 
 <section>
     <h2>Want to know more about <em>Loren Ipsum?</em></h2>
@@ -42,13 +72,16 @@
         <input type="email" name="webmail" id="webmail"><br><br>
         <label for="comments">Questions or Comments</label><br>
         <textarea name="comments" id="comments" rows="3" cols="30"></textarea><br><br>
-        <input type="submit" value="Submit Information">&nbsp;&nbsp;&nbsp;
-            <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit Information" onClick="return checksubmit(this)">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Clear Form">
     </form>
 </section>
+
+<p>This form uses the <a href="https://javascriptkit.com/script/script2/blockdblsubmit.shtml"><em>Cut & Paste</em> Block multiple form submission</a> JavaScript code,<br>
+Attempts to re-submit this form will see an error.</p> 
 
 <br><br>
 <hr>
 
-<p>Background Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/background-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+<p>Background Pattern by Atle Mo</a> on <a href="https://www.toptal.com/designers/subtlepatterns/awesome-pattern/">Toptal</a></p>
 </body>
