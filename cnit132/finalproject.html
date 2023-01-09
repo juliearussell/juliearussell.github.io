@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CNIT132 Final Project</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="description" content="CCSF CNIT132 Intermediate HTML and CSS Final Project">
+	<link rel="stylesheet" href="finalproject.css">
+</head>
+
+<body>
+
+<div class="grid" id="box"> 
+
+<header class="grid-area grid-area-1" id="header"><h1>CCSF CNIT132 Final Project for JRussell</h1></header>
+
+<nav class="grid-area grid-area-2"> 
+<ul id="center"> 
+	<li><a href="finalproject.html"> Home</a></li>
+	<li><a href="assignments.html"> Assignments</a></li>
+	<li><a href="meetup-grid.html"> MeetUp</a></li>
+	<li><a href="contact.html"> Contact</a></li>
+
+</ul>
+</nav>
+
+<main class="grid-area grid-area-3"> 
+
+<p><img src="kissed-by-a-dolphin.jpg" alt="Octavio the dolphin kisses Julie the human"></p>
+<p><strong>About me:</strong> When I am not swimming with dolphins in Mexico, I work in tech, walk my dog, write fiction, practice yoga, and enjoy time with my friends.</p>
+
+<p>My path into and around web development has been circuitous. I have worked in web infrastructure since 1998, along side designers, front end developers, applications developers, and the like. I'd never coded a web page until 1999 when I spun up a very amateurishly designed web magazine using MS Front Page. It was completely static html.  A few years later I created a marketing web page for a yoga business I started that never got off the ground. This design was a little better. You can see that site on the <a href="https://web.archive.org/web/20120715004039/http://yogadelivery.com/" target="_blank" rel="noopener noreferrer">wayback machine</a>.  In years since, I have continued working in web infrastructure, or giving the web code a place to call home, but haven't touched html until CS131H this semester.  I had forgotten how fun it is to create web pages, and the joy of seeing the pages go live on the Internet.
+
+My favorite website is also my last employer, <a href="https://medium.com" target="_blank" rel="noopener noreferrer">Medium</a>. I've always appreciated the clean design, the user generated content, and my team and I worked hard to keep the infrastructure operational behind the scenes.</p>
+
+<a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century" target="_blank" rel="noopener noreferrer">Brief History of Web Development: The Turn of the Century</a>
+
+
+<hr>
+<h2>Some Interesting Links</h2>
+
+<ul>
+	<li><a href="https://medium.com/developer-purpose/youre-not-an-imposter-developers-are-all-faking-it-145a04e9cef4" target="_blank" rel="noopener noreferrer">Medium: You're not an imposter. Developers are all faking it.</a>
+	It is easy to fall prey to imposter syndrome, this post reminds me I am likely doing better than I believe. </li>
+	<li><a href="https://josh.works/dizzying-but-invisible-depth" target="_blank" rel="noopener noreferrer"> Dizzying But Invisible Depth</a>
+	What does happen when you open a web page, or click on this link? It's easy to forget what's happening under the hood.</li>
+	<li><a href="https://peps.python.org/pep-0020/" target="_blank" rel="noopener noreferrer">The Zen of Python</a>
+	Python was the first language I learned, along with "import this", and Python's iconic list of aphorisms hold true in any language. </li>
+</ul>
+</main>
+
+
+<footer class="grid-area grid-area-4"  id="footer">Copyright J Russell 2022.  All rights reserved. <br> 
+  To contact me use the <a href="contact.html">contact form</a> or <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer>
+
+
+</div>
+</body>
+
+<!--
+TODO
+DONE a/ layout with grid or flexbox -> done, used grid
+    > DONE: figure out the grid-gap so you don't have the janky right edge
+    > NOT DOING: links, figure out how to get rid of the extra space to align with the title "some interesting links"
+b/ use semantic tags (header, nav, main, etc)
+    > DONE: when I tried to use "nav" instead of "aside" for left hand nav, page got janky, leave with aside? works now with nav, shrug
+    > DONE: other semantic tags (note: div is not a semantic tag, don't use it) except I had to with the grid. shrug.
+c/ DONE layout of page with the image given - used same css on all three pages (diff for meetup-grid.html)
+d/ DONE bg color - chose gray, body background is that blue color - checked visibility for color blindness
+e/ DONE header section
+f/ menu section 
+    > DONE ENOUGH: "the whole container having menu, heading, content and footer would be centralized within the width of the browser"  - centralize text within width of browser - used  id="center" in h1 + footer + ul + main to center text, but what else? do I want the main text centered in the column? > decided no
+    > DONE: add shadow, get rid of extra space below footer
+    DONE ENOUGH: Center top H1 vertically in its section
+
+  g/ DONE contact page - see contact.html for TODOs
+  h/ DONE contact form on contact page - see contact.html for TODOs
+  i/ DONE update link on finalproject.html to contact.html
+  j/ DONE footer - add copyright, name, email + email link
+  k/ DONE update meetup link in all three pages
+  l/ DONE assignments and contact pages have same design & layout - used same finalproject.css for all pages
+  m/ DONE add favicon (smirking cat)
+
+Other TODOs:
+DONE + update meetup-grid.html with left hand nav (in aside) - submitted with placeholder text
+DONE + update any changes to layout/design on meetup-grid.html
+
+-->
+
+</html>
+
