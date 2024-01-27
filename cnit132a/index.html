@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>CNIT132 Final Project</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta
+      name="description"
+      content="CCSF CNIT132 Intermediate HTML and CSS Final Project"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<head>
-	<title>CNIT132 Final Project</title>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="description" content="CCSF CNIT132 Intermediate HTML and CSS Final Project">
-	<link rel="stylesheet" href="main.css">
-</head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    gtag("config", "G-4YWPS35WJS");
+  </script>
 
-  gtag('config', 'G-4YWPS35WJS');
-</script>
+  <body>
+    <div class="grid" id="box">
+      <header class="grid-area grid-area-1" id="header">
+        <h1>CCSF CNIT132A Website</h1>
+      </header>
 
-<body>
+      <nav class="grid-area grid-area-2">
+        <ul id="center">
+          <li><a href="finalproject.html"> Home</a></li>
+          <li><a href="assignments.html"> Assignments</a></li>
+          <li><a href="wisdom.html"> Random Mom Wisdom</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+      </nav>
 
-<div class="grid" id="box"> 
+      <main class="grid-area grid-area-3">
+        <p>
+          <img
+            src="images/kissed-by-a-dolphin.jpg"
+            alt="Octavio the dolphin kisses Julie the human"
+          />
+        </p>
+        <p>
+          <strong>About me:</strong> When I am not swimming with dolphins in
+          Mexico, I work in tech, walk my dog, write fiction, practice yoga, and
+          enjoy time with my friends.
+        </p>
 
-<header class="grid-area grid-area-1" id="header"><h1>CCSF CNIT132A Website</h1></header>
+        <p>
+          My path into and around web development has been circuitous. I have
+          worked in web infrastructure since 1998, along side designers, front
+          end developers, applications developers, and the like. I'd never coded
+          a web page until 1999 when I spun up a very amateurishly designed web
+          magazine using MS Front Page. It was completely static html. A few
+          years later I created a marketing web page for a yoga business I
+          started that never got off the ground. This design was a little
+          better. You can see that site on the
+          <a
+            href="https://web.archive.org/web/20120715004039/http://yogadelivery.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >wayback machine</a
+          >. In years since, I have continued working in web infrastructure, or
+          giving the web code a place to call home, but haven't touched html
+          until CS131H this semester. I had forgotten how fun it is to create
+          web pages, and the joy of seeing the pages go live on the Internet. My
+          favorite website is also my last employer,
+          <a href="https://medium.com" target="_blank" rel="noopener noreferrer"
+            >Medium</a
+          >. I've always appreciated the clean design, the user generated
+          content, and my team and I worked hard to keep the infrastructure
+          operational behind the scenes.
+        </p>
 
-<nav class="grid-area grid-area-2"> 
-<ul id="center"> 
-	<li><a href="finalproject.html"> Home</a></li>
-	<li><a href="assignments.html"> Assignments</a></li>
-	<li><a href="contact.html"> Contact</a></li>
+        <a
+          href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Brief History of Web Development: The Turn of the Century</a
+        >
 
-</ul>
-</nav>
+        <hr />
+        <h2>Some Interesting Links</h2>
 
-<main class="grid-area grid-area-3"> 
+        <ul>
+          <li>
+            <a
+              href="https://medium.com/developer-purpose/youre-not-an-imposter-developers-are-all-faking-it-145a04e9cef4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Medium: You're not an imposter. Developers are all faking it.</a
+            >
+            It is easy to fall prey to imposter syndrome, this post reminds me I
+            am likely doing better than I believe.
+          </li>
+          <li>
+            <a
+              href="https://josh.works/dizzying-but-invisible-depth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dizzying But Invisible Depth</a
+            >
+            What does happen when you open a web page, or click on this link?
+            It's easy to forget what's happening under the hood.
+          </li>
+          <li>
+            <a
+              href="https://peps.python.org/pep-0020/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >The Zen of Python</a
+            >
+            Python was the first language I learned, along with "import this",
+            and Python's iconic list of aphorisms hold true in any language.
+          </li>
+        </ul>
+      </main>
 
-<p><img src="images/kissed-by-a-dolphin.jpg" alt="Octavio the dolphin kisses Julie the human"></p>
-<p><strong>About me:</strong> When I am not swimming with dolphins in Mexico, I work in tech, walk my dog, write fiction, practice yoga, and enjoy time with my friends.</p>
+      <footer class="grid-area grid-area-4" id="footer">
+        Copyright J Russell 2022-2024. All rights reserved. <br />
+        To contact me use the <a href="contact.html">contact form</a> or
+        <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a>
+        (this email is intentionally invalid to avoid spam)
+      </footer>
+    </div>
+  </body>
 
-<p>My path into and around web development has been circuitous. I have worked in web infrastructure since 1998, along side designers, front end developers, applications developers, and the like. I'd never coded a web page until 1999 when I spun up a very amateurishly designed web magazine using MS Front Page. It was completely static html.  A few years later I created a marketing web page for a yoga business I started that never got off the ground. This design was a little better. You can see that site on the <a href="https://web.archive.org/web/20120715004039/http://yogadelivery.com/" target="_blank" rel="noopener noreferrer">wayback machine</a>.  In years since, I have continued working in web infrastructure, or giving the web code a place to call home, but haven't touched html until CS131H this semester.  I had forgotten how fun it is to create web pages, and the joy of seeing the pages go live on the Internet.
-
-My favorite website is also my last employer, <a href="https://medium.com" target="_blank" rel="noopener noreferrer">Medium</a>. I've always appreciated the clean design, the user generated content, and my team and I worked hard to keep the infrastructure operational behind the scenes.</p>
-
-<a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century" target="_blank" rel="noopener noreferrer">Brief History of Web Development: The Turn of the Century</a>
-
-
-<hr>
-<h2>Some Interesting Links</h2>
-
-<ul>
-	<li><a href="https://medium.com/developer-purpose/youre-not-an-imposter-developers-are-all-faking-it-145a04e9cef4" target="_blank" rel="noopener noreferrer">Medium: You're not an imposter. Developers are all faking it.</a>
-	It is easy to fall prey to imposter syndrome, this post reminds me I am likely doing better than I believe. </li>
-	<li><a href="https://josh.works/dizzying-but-invisible-depth" target="_blank" rel="noopener noreferrer"> Dizzying But Invisible Depth</a>
-	What does happen when you open a web page, or click on this link? It's easy to forget what's happening under the hood.</li>
-	<li><a href="https://peps.python.org/pep-0020/" target="_blank" rel="noopener noreferrer">The Zen of Python</a>
-	Python was the first language I learned, along with "import this", and Python's iconic list of aphorisms hold true in any language. </li>
-</ul>
-</main>
-
-
-<footer class="grid-area grid-area-4"  id="footer">Copyright J Russell 2022-2024.  All rights reserved. <br> 
-  To contact me use the <a href="contact.html">contact form</a> or <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer>
-
-
-</div>
-</body>
-
-<!--
+  <!--
 TODO
 DONE a/ layout with grid or flexbox -> done, used grid
     > DONE: figure out the grid-gap so you don't have the janky right edge
@@ -95,7 +162,4 @@ Other TODOs:
 DONE + update meetup-grid.html with left hand nav (in aside) - submitted with placeholder text
 DONE + update any changes to layout/design on meetup-grid.html
 
--->
-
-</html>
-
+--></html>
