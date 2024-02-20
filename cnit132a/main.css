@@ -5,7 +5,7 @@
  grid-gap: .5px;
  /* grid-template-columns: 200px 350px auto; */
  grid-template-columns: 200px 600px;
- grid-template-rows: 120px 900px 50px;
+ grid-template-rows: 120px auto 50px;
  margin: 25px auto;
  width: 800px;
  height: 1120px;
@@ -35,7 +35,7 @@ a { text-decoration: none; color:white;  font-weight: normal; }
 
 body { background-color:  #c9e1e6;}
 
-#box {box-shadow: 5px 5px 7px black;}
+#box {box-shadow: 3px 0px 5px black;}
 #center {text-align:center;}
 
 #footer {
