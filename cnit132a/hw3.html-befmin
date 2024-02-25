@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4YWPS35WJS');
+</script>
+
+	<title>CNIT132A Homework 3 - Working with images</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css">
+
+	<meta name="description" content="CNIT-132A Advanced HTML & CSS Course Assignments">
+	<style>
+	h1 {font-size:  2em; color: #333333;}
+	h2 {color: #333333;}
+	p {color: #333333;}
+    </style>
+
+
+</head>
+
+
+<body>
+<div class="grid" id="box"> 
+
+<header class="grid-area grid-area-1"  id="header"><h1>Working With Images</h1> </header>
+<nav class="grid-area grid-area-2"> 
+<ul id="center"> 
+  <li><a href="index.html"> Home</a></li>
+  <li><a href="assignments.html"> Assignments</a></li>
+  <li><a href="wisdom.html"> Practical Wisdom</a></li>
+  <li><a href="contact.html"> Contact</a></li>
+</ul>
+</nav>
+
+<main class="grid-area grid-area-3"> 
+
+<!-- <h2>Homework 3 - Working with images</h2> -->
+
+<figure>
+  <img src="images/hw3_landscape_mclaren_park_500x375.jpg" alt="View of western San Francisco and sliver of Pacific Ocean as seen from McLaren Park">
+  <figcaption>Original image is 500x375 pixels, 254KB</figcaption>
+</figure>
+
+<figure>
+  <img src="images/hw3_landscape_mclaren_park_500x375-min.jpg" alt="View of western San Francisco and sliver of Pacific Ocean as seen from McLaren Park, optimized">
+  <figcaption>Optimized image is 500x375 pixels, 44KB</figcaption>
+</figure>
+
+<p>To optimize the image, I used <a href="https://imagecompressor.com/">Optimizilla</a> 
+  and CDT shows a difference in image download time of 256ms for the original, and 112ms for the optimized image. </p>
+</main>
+<footer class="grid-area grid-area-4"  id="footer">Copyright J Russell 2022-2024.  All rights reserved. <br> 
+  To contact me use the <a href="contact.html">contact form</a> or <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer>
+</div>
+
+<!--
+  TODO:
+  1. figure out why box-shadow doesn't go all the way to the bottom of the grid. SOB!
+  2. item #3 on this page: https://ccsf.instructure.com/courses/59664/assignments/1462220 - 
+  minimize all the pages with this: https://kangax.github.io/html-minifier/
+-->
+</body>
+</html>
