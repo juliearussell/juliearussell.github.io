@@ -1,0 +1,24 @@
+<!DOCTYPE html> <html lang="en"> <head>
+    <style>
+    header { grid-area: header; } nav { grid-area: menu; } main { grid-area: main; } aside { grid-area: right; } footer { grid-area: footer; }
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header' 'menu main main main right right'
+    'menu footer footer footer footer footer'; grid-gap: 10px;
+    background-color: lightblue;
+    padding: 10px;
+    }
+    header, nav, main, aside, footer { background-color: rgba(0, 0, 255, 0.4); text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    color: white; }
+    </style> </head> <body>
+    <h1>Using Grid Template Areas</h1>
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+    <p>This grid layout contains six columns and three rows:</p>
+    <div class="grid-container">
+    <header>Header</header> <nav>Menu</nav> <main>Main</main> <aside>Right</aside> <footer>Footer</footer>
+    </div>
+    </body> </html>

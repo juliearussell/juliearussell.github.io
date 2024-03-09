@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.part3 { grid-column: auto / span 2; }
+.grid-container { display: grid;
+grid-template-columns: auto auto auto; grid-template-rows: auto auto; grid-gap: 10px;
+background-color: lightblue;
+padding: 10px; }
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8); text-align: center;
+padding: 20px 0;
+font-size: 30px;
+} </style> </head> <body>
+<h1>Using grid-auto-flow</h1>
+<p>This property controls how auto-placed items are inserted in the grid.</p> <p>This grid has three columns and two rows.</p>
+<p>The "part3" spans two columns. We will now see where the other elements will be inserted depending on the value of the <strong>grid-auto-flow</strong>.</p>
+<h2>grid-auto-flow: row</h2>
+<div class="grid-container" style="grid-auto-flow: row;">
+<div class="part1">1</div> <div class="part2">2</div> <div class="part3">3</div> <div class="part4">4</div>
+</div>
+<h2>grid-auto-flow: row dense</h2>
+<p>The "dense" value fills holes in the grid:</p>
+<div class="grid-container" style="grid-auto-flow: row dense;">
+<div class="part1">1</div> <div class="part2">2</div> <div class="part3">3</div> <div class="part4">4</div>
+</div>
+</body> </html>
