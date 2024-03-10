@@ -11,75 +11,96 @@
   gtag('config', 'G-4YWPS35WJS');
 </script>
 
-	<title>CNIT132A HW4 Part 2</title>
+	<title>CNIT132A HW4 Part 2 Flexbox</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="favicon.ico">
   
-  <!-- coomenting out style sheet
+  <!-- commenting out style sheet used for other pages
     <link rel="stylesheet" href="main.css"> 
   -->
 
 	<meta name="description" content="CNIT-132A Advanced HTML & CSS Course Assignments">
-	<style>
-	h1 {font-size:  2em; color: #333333;}
-	h2 {color: #333333;}
-	p {color: #333333;}
 
-.flex-container { display: flex;
-width: 1300px;
-height: 250px;
-background-color: #e3e3e3; }
+<style>
+body{
+  margin:0px;
+}
+body > div{
+  display:flex;
+  flex-flow:row wrap;
+}
+body > div > header, aside1, main, extra, aside2, footer{
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  font-weight:bold;
 
-.child1 { width: 1300px; height: 100px; background-color: red; font-style: italic; margin: 5px; }
+}
+header{
+  order:1;
+  height:40px;
+  flex:0 1 1280px;
+  background: tomato;
+  align-items: center;
+  justify-content: center;
+}
+aside1{
+  order:2;
+  flex:0 1 300px;
+  background: yellow;
+}
+main{
+  order:3;
+  min-height:120px;
+  flex:0 1 340px;
+  background: navy;
+  color: white;
+}
+extra{
+  order:4;
+  flex:0 1 340px;
+  color: blue;
+  background: orchid;
+}
+aside2{
+  order:5;
+  flex:0 1 300px;
+  background: pink;
+}
+
+
+footer{
+  height:70px;
+  order:6;
+  flex:0 1 1280px;
+  background: palegreen;
+}
+
 
 </style>
-
 
 </head>
 
 
-
 <body>
-<!-- flexbox experimenting -->
+    
+  <div>
+    <header>Name of Company</header>
+    <aside1>This is the aside 1</aside1>
+    <main>This is the main article of my page! This is the main content of the page. 
+      In a 3-column layout, it should be shown in the middle between the aside I and aside 2!</main>
+    <extra>This column was created to have some content as a 
+      challenge to adapt the old 3-column lavout to a 4-column lavout</extra>
+    <aside2>This is the aside 2</aside2>
+    <footer>This is the footer<br>Copyright © 2017</footer>  
+  </div>
 
-  <div class="flex-container">
-    <div class="child1">child item 1</div> 
-    <div class="child1">child item 2</div> 
-    <div class="child1">child item 3</div>
-    </div>
-
-
-<!--
-  commenting out all the grid things
-
-  <div class="grid" id="box"> 
-
-<header class="grid-area grid-area-1"  id="header"><h1>CCSF CNIT132A Course Assignments</h1> </header>
-<nav class="grid-area grid-area-2"> 
-<ul id="center"> 
-  <li><a href="index.html"> Home</a></li>
-  <li><a href="assignments.html"> Assignments</a></li>
-  <li><a href="wisdom.html"> Practical Wisdom</a></li>
-  <li><a href="contact.html"> Contact</a></li>
-</ul>
-</nav>
-
-<main class="grid-area grid-area-3"> 
-
-<h2>Spring 2024 Homework Assignments</h2>
-
-<p><a href="hw3.html"> Homework 3 - Working with images</a></p>
-
-
-
-
-
-</main>
-<footer class="grid-area grid-area-4"  id="footer">Copyright J Russell 2022-2024.  All rights reserved. <br> 
-  To contact me use the <a href="contact.html">contact form</a> or <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer>
-</div>
---> 
-
-
-</body>
-</html>
+  <!-- TODO
+  1/ get text block to vertically center for header, footer, body, and extra column.
+  this isn't working:
+    align-items: center;
+  justify-content: center;
+then check HW page for anything I missed ...
+-->
+  </body>
+  </html>
