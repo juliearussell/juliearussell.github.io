@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- 
+<html lang="en">
 <head> 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"></script>
@@ -23,12 +23,14 @@
 <style>
 body{
   margin:20px;
+}
+body > div{
   display:flex;
   flex-flow:row wrap;
   color: #000000;
   font-size: 15px;
 }
-body > header, aside1, main, extra, aside2, footer{
+body > div > header, aside1, main, extra, aside2, footer{
   /* text-align: center; */
   font-weight:bold;
   /* align-content: space-around; */
@@ -84,7 +86,7 @@ footer{
 
 <body>
     
- 
+  <div>
     <header>Name of Company - Attempt #21</header>
 
     <aside1>This is the aside 1</aside1>
@@ -94,7 +96,7 @@ footer{
       challenge to adapt the old 3-column lavout to a 4-column lavout</extra>
     <aside2>This is the aside 2</aside2>
     <footer>This is the footer<br>Copyright © 2017</footer>  
-  
+  </div>
 
   <!-- TODO
     1/ get text block to vertically center for header, footer, body, and extra column.
