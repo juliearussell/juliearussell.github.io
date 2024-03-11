@@ -14,78 +14,81 @@
 	<title>CNIT132A HW4 Part 2 Flexbox</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="favicon.ico">
-  
+  <meta name="description" content="CNIT-132A Advanced HTML & CSS Course Assignments">
+
   <!-- commenting out style sheet used for other pages
     <link rel="stylesheet" href="main.css"> 
   -->
 
-	<meta name="description" content="CNIT-132A Advanced HTML & CSS Course Assignments">
-
 <style>
 body{
-  margin:0px;
+  margin:20px;
 }
 body > div{
   display:flex;
   flex-flow:row wrap;
-}
-body > div > header, aside1, main, extra, aside2, footer{
   color: #000000;
   font-size: 15px;
-  text-align: center;
+}
+body > div > header, aside1, main, extra, aside2, footer{
+  /* text-align: center; */
   font-weight:bold;
-
+  /* align-content: space-around; */
+  /* align-items: center; --this does nothing :( */
+  padding: 10px;
 }
 header{
   order:1;
-  height:40px;
-  flex:0 1 1280px;
+  height:20px; text-align: center;
+  /* flex:0 1 1280px; */
+  flex:0 1 100%; 
   background: tomato;
-  align-items: center;
-  justify-content: center;
 }
 aside1{
   order:2;
   flex:0 1 300px;
   background: yellow;
+  text-align: center;
 }
 main{
   order:3;
-  min-height:120px;
-  flex:0 1 340px;
+  min-height: 100px; 
+  flex: 1;
   background: navy;
   color: white;
 }
 extra{
   order:4;
-  flex:0 1 340px;
+  /* flex:0 1 340px; */
+  flex: 1;
   color: blue;
   background: orchid;
+  align-self: center;
 }
 aside2{
   order:5;
   flex:0 1 300px;
   background: pink;
+  text-align: center;
 }
-
 
 footer{
-  height:70px;
+  height:40px;
   order:6;
-  flex:0 1 1280px;
+ /* flex:0 1 1280px; */
+ flex:0 1 100%; 
   background: palegreen;
+  text-align: center;
 }
 
-
 </style>
-
 </head>
-
 
 <body>
     
   <div>
-    <header>Name of Company</header>
+    <header>Name of Company - Attempt #21</header>
+
     <aside1>This is the aside 1</aside1>
     <main>This is the main article of my page! This is the main content of the page. 
       In a 3-column layout, it should be shown in the middle between the aside I and aside 2!</main>
@@ -96,11 +99,28 @@ footer{
   </div>
 
   <!-- TODO
-  1/ get text block to vertically center for header, footer, body, and extra column.
+    1/ get text block to vertically center for header, footer, body, and extra column.
+    2/ CHECK CONTENT WITH W3 VALIDATOR
+
+  attempts:
+  #1 - put justify-content:center in body{}
+  #2 - put align-items: center; in body > div // result: aside 1, extra, and aside 2 are centered in row, 
+  but only have color for the text. Main is not centered, nor is header/footer.  HM.
+  #3 - align-items: center in body{} // result: nothing is centered, and its as if I did nothing
+  #4 removed /* justify-content: space-around; */ from body > div > header... & added align-items: center; // did nothing
+  #5 added back justify-content: space-around; from body > div > header... // did nothing
+  #6 adding align-content: space-around; to body>div>header ... // did nothing
+
   this isn't working:
     align-items: center;
   justify-content: center;
+  align-self: center; worked on the "extra" column only????
 then check HW page for anything I missed ...
+
+things:
+  /* align-items: center;
+  justify-content: center; */
+  align-self: center;
 -->
   </body>
   </html>

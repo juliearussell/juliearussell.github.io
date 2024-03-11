@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+<title>CNIT132A HW4 Part 2 Flexbox</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico">
+
+<meta name="description" content="CNIT-132A Advanced HTML & CSS Course Assignments">
+
+<style>
+.flex4 { display: flex; flex-wrap: wrap; 
+    width: 1000px; height: 150px; 
+    background-color: lightgrey;  
+    align-content: space-around; justify-content: space-between;
+}
+
+.child3 { background-color: lime; 
+    height: 30px;
+    width: 60px;
+    /* padding: 15px; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<p>flex4, child3 take 4</p>
+<div class="flex4">
+    <div class="child3">Flex 1</div>
+    <div class="child3">Flex 2</div>
+    <div class="child3">Flex 3</div>
+    <div class="child3">Flex 4</div>
+    <div class="child3">Flex 5</div>
+    <div class="child3">Flex 6</div>
+    <div class="child3">Flex 7</div>
+    <div class="child3">Flex 8</div>
+    <div class="child3">Flex 9</div>
+    <div class="child3">Flex A</div>
+    <div class="child3">Flex B</div>
+    <div class="child3">Flex C</div>
+ </div>
+</body>
+
+<!-- 
+ORIGINAL:
+.flex4 { display: flex; flex-wrap: wrap; align-content: space-around; 
+    width: 400px; height: 150px; background-color: lightgrey; justify-content: space-between; }
+
+.child3 { background-color: lime; padding: 10px; }
+-->
+
+</html>
