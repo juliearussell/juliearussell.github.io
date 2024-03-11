@@ -87,7 +87,7 @@ footer{
 <body>
     
   <div>
-    <header>Name of Company - Attempt #21</header>
+    <header>Name of Company</header>
 
     <aside1>This is the aside 1</aside1>
     <main>This is the main article of my page! This is the main content of the page. 
@@ -102,22 +102,8 @@ footer{
     1/ get text block to vertically center for header, footer, body, and extra column.
     2/ CHECK CONTENT WITH W3 VALIDATOR
 
-  attempts:
-  #1 - put justify-content:center in body{}
-  #2 - put align-items: center; in body > div // result: aside 1, extra, and aside 2 are centered in row, 
-  but only have color for the text. Main is not centered, nor is header/footer.  HM.
-  #3 - align-items: center in body{} // result: nothing is centered, and its as if I did nothing
-  #4 removed /* justify-content: space-around; */ from body > div > header... & added align-items: center; // did nothing
-  #5 added back justify-content: space-around; from body > div > header... // did nothing
-  #6 adding align-content: space-around; to body>div>header ... // did nothing
-
-  this isn't working:
-    align-items: center;
-  justify-content: center;
-  align-self: center; worked on the "extra" column only????
-then check HW page for anything I missed ...
-
-things:
+    things I tried to get vertical center to work, but none worked right 
+    except for the "extra" box, it worked but the background didn't cover the whole area
   /* align-items: center;
   justify-content: center; */
   align-self: center;
