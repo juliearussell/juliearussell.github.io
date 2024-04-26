@@ -1,0 +1,76 @@
+$dg: #2f2828;
+$lr: #eecccc;
+
+@function calc-rem($size) {
+    $rem-size: ($size / 16px) + rem;
+    @return $rem-size; 
+}
+
+@mixin col {
+  float: left; 
+  width: 25%; 
+}
+
+@mixin blr-cdg {
+  background-color: $lr;
+  color: $dg;  
+}
+
+@mixin bdg-clr {
+    background-color: $dg; 
+    color: $lr; 
+}
+
+.wrapper { 
+  width: 100%; 
+  background-color: $lr; 
+  font-size: calc-rem(19.2px);  
+}
+.header {
+	width: 100%;
+}
+
+.header h1 {
+	font-size: calc-rem(40px);   
+	color: $dg;
+}
+
+.nav {
+	width: 100%;
+	background-color: #fbf4f4;
+	font-size: calc-rem(16px);
+	padding: calc-rem(3.2px); 
+}
+
+.nav ul li {
+	display: inline-block;
+	width: calc-rem(160px); 
+	margin-right: calc-rem(3.2px); 
+	border-radius: calc-rem(5px);
+	border: 1px solid transparent;
+	@include blr-cdg;
+}
+
+.col1 {
+  float: left; 
+  width: 50%; 
+  @include bdg-clr;
+}
+
+.col2 { 
+  @include col;
+  @include blr-cdg;
+}
+.col2 h2 {
+  color: black;
+}
+.col3 {
+  @include col;
+  @include bdg-clr;
+}
+.footer {
+  width: 100%; 
+  background-color: $lr; 
+  font-size: calc-rem(14.4px);  
+}
+
