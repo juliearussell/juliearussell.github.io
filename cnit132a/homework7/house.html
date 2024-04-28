@@ -13,6 +13,20 @@
              shape-outside: url(house.png); 
              shape-margin: 10px;
            }
+    
+    /* You will add a simple container query so that the h2 will be smaller 
+    if the parent element (the container) is less than 600px (600 pixels). */
+
+    .container {
+        container-type: inline-size;
+    }
+
+    @container (min-width:40ch) {
+        h2 {
+            color: red;
+    }
+}
+
    </style>
 </head>
 <body>
@@ -36,6 +50,8 @@
 1/ figure out what a container query is, then code that based on this:
 You will add a simple container query so that the h2 will be smaller if the parent element (the container) 
 is less than 600px (600 pixels). 
+2/ remember to check caniuse
+3/ rem to check validator.w3.org !!!
 
 -->
 </body>
