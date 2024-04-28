@@ -7,39 +7,29 @@
    <style>
 	  body { font: 1em Helvetica, Arial, sans-serif; background-color: beige; }
 
-     .content {max-width: 600px; margin: 10px auto; }
+    .content {max-width: 600px; margin: 10px auto; }
 
-     .house { float: left;
+    .house { float: left;
              shape-outside: url(house.png); 
              shape-margin: 10px;
            }
-    
-    /* You will add a simple container query so that the h2 will be smaller 
-    if the parent element (the container) is less than 600px (600 pixels). */
 
     .post {
         container-type: inline-size;
         container-name: post;
     }
 
-    .card h2 {
-        font-size: 1.2em;
-    }
-
+    .card h2 { font-size: 1.2em; }
 
     @container post (min-width:600px) {
-       .card h2 {
-            font-size: 1.5em;
-    }
+       .card h2 { font-size: 1.5em; }
 }
-
    </style>
 </head>
 <body>
 <h1>Shaping Content Around An Image</h1>
 
 <main class="post">
-
 <article class="card">
     <section class="content">
    <h2>Shaping around the house</h2>
@@ -47,11 +37,12 @@
 
 <img src="house.png" alt="black house shape" class="house">
   
-  <p>Once upon a time there was a house. This house had a lovely house shape, in fact, the shape was so lovely that we had an 
+<p>Once upon a time there was a house. This house had a lovely house shape, in fact, the shape was so lovely that we had an 
     assignment to write a few paragraphs that wrap around the shape of the house. Which is what this is.</p>
 
 <p>This is the second paragraph that wraps around this lovely house. See how nice the house is nestled up against these words? 
-    It is almost as if the house is welcoming the words to come in and stay a while.
+    It is almost as if the house is welcoming the words to come in and stay a while. But the one who is not welcome is the 
+    big bad wolf.  Other wolves are welcome in this little house. 
 </p>
 
 <p>But of course, that is silly. It is an image of a house, and these are words and punctuation hanging out next to the house. 
@@ -60,13 +51,5 @@
 </article>
 </main>
 
-<!-- TODO
-1/ figure out what a container query is, then code that based on this:
-You will add a simple container query so that the h2 will be smaller if the parent element (the container) 
-is less than 600px (600 pixels). 
-2/ remember to check caniuse
-3/ rem to check validator.w3.org -> giving errors, b/c css shape-* properties don't work in all browsers
-
--->
 </body>
 </html>
