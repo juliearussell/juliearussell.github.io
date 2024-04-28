@@ -1,29 +1,34 @@
 
 * { background-color:#C0DEED;}
 
-@keyframes rolling {
-    0% { background-position: left top; }
-    /* 50% {background-position: center top;} */
-    100% { background-position: right top; }
-    /* from { visibility: hidden; }
-    to    { visibility: visible; } */ 
+
+
+ #banner {
+    bottom:15%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 12s;
+    /* -webkit-animation: rotating 10s linear infinite; */
  }
- #banner { 
-    position: fixed;
-    top: 500px;           
-    left: 350px; 
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
-    width: 100%;
-    height: auto;
-    animation: rolling 20s linear 5s forwards; 
+
+@-webkit-keyframes move {
+    0% {left: 0;}
+    50% {left: 90%;}
+    100% {left: 50%;}
 }
+
+@keyframes rotating {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+ }
+
 
 @keyframes moving_clouds { 
     0% { background-position: left top; }
     100% { background-position: right top; }
  }
+
 
 #sky {
 position:fixed;
@@ -43,16 +48,42 @@ animation-duration: 10s ;
 animation-timing-function: linear;
 animation-delay: 2s ;
 animation-iteration-count: infinite;
-
-/* ideas while reading Animations section: 
-ref: https://www.w3schools.com/css/css3_animations.asp
-animation: rolling 5s linear 5s infinite;  -> name / duration / timing-function / delay / iteration-count / direction
-
- #field:hover #banner { animation: showing 2s linear 5s forwards; }
-
-
-
-
- */
-
 }
+
+/*
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+}
+*/
+
+/*  
+
+@keyframes rolling {
+    0% { background-position: left top; }
+    /* 50% {background-position: center top;} */
+    100% { background-position: right top; }
+    /* from { visibility: hidden; }
+    to    { visibility: visible; } */ 
+ }
+ 
+ #banner { 
+    position: fixed;
+    top: 500px;           
+    left: 350px; 
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    animation: rolling 20s linear 5s forwards; 
+}
+*/

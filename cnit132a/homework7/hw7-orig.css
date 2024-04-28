@@ -1,0 +1,58 @@
+
+* { background-color:#C0DEED;}
+
+@keyframes rolling {
+    0% { background-position: left top; }
+    /* 50% {background-position: center top;} */
+    100% { background-position: right top; }
+    /* from { visibility: hidden; }
+    to    { visibility: visible; } */ 
+ }
+ #banner { 
+    position: fixed;
+    top: 500px;           
+    left: 350px; 
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    animation: rolling 20s linear 5s forwards; 
+}
+
+@keyframes moving_clouds { 
+    0% { background-position: left top; }
+    100% { background-position: right top; }
+ }
+
+#sky {
+position:fixed;
+top:0px;left:0px;
+width:100%;
+height:100%;
+text-align:center;
+margin:0px;
+padding:0px;
+background-color:#C0DEED;
+background: url(clouds.png) center top repeat-x;
+padding-top:300px;
+padding-bottom:10px;
+
+animation-name: moving_clouds;
+animation-duration: 10s ; 
+animation-timing-function: linear;
+animation-delay: 2s ;
+animation-iteration-count: infinite;
+
+/* ideas while reading Animations section: 
+ref: https://www.w3schools.com/css/css3_animations.asp
+animation: rolling 5s linear 5s infinite;  -> name / duration / timing-function / delay / iteration-count / direction
+
+ #field:hover #banner { animation: showing 2s linear 5s forwards; }
+
+
+
+
+ */
+
+}
