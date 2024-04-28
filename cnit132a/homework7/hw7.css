@@ -1,11 +1,9 @@
 
 * { background-color:#C0DEED;}
 
-
 @keyframes rolling { 
-    0% { background-position: 0%; }
-    /* 50% { left: 200px; top: 50px; } */
-    100% { background-position: 100%; }
+    0% { background-position: left top; }
+    100% { background-position: right top; }
  }
 
 #sky {
