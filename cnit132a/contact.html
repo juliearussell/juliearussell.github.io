@@ -1,1 +1,86 @@
-<!doctypehtml><html lang=en><script async src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-4YWPS35WJS")</script><title>CNIT132 Contact Form</title><meta charset=utf-8><link href=favicon.ico rel="shortcut icon"><link href=main.css rel=stylesheet><meta content="CCSF CNIT132 Intermediate HTML and CSS Contact Page for JRussell"name=description><style>#myForm{background-color:#eaeaea;font-family:Arial,sans-serif;width:500px}label{float:left;width:120px;text-align:right;padding-right:10px;margin-top:10px}input,textarea{margin-top:10px}#mySubmit{margin-left:130px;padding-bottom:10px}</style><div id=box class=grid><header class="grid-area grid-area-1"id=header><h1>CCSF CNIT132 Contact Me Page for JRussell</h1></header><nav class="grid-area grid-area-2"><ul id=center><li><a href=index.html>Home</a><li><a href=assignments.html>Assignments</a><li><a href=wisdom.html>Practical Wisdom</a><li><a href=contact.html>Contact</a></ul></nav><main class="grid-area grid-area-3"><p>If you would like to contact me, complete & submit this form.<fieldset><legend>Contact Me</legend><form id=myForm method=post><div><label for=myName>Name:</label> <input id=myName name=myName placeholder="your name"required></div><div><label for=myEmail>E-mail:</label> <input id=myEmail name=myEmail placeholder="email address"required type=email></div><div><label for=myComments>Comments:</label> <textarea cols=20 id=myComments name=myComments placeholder="tell me more ..."rows=2></textarea></div><div id=mySubmit><input type=submit value=Submit></div></form></fieldset></main><footer class="grid-area grid-area-4"id=footer>Copyright J Russell 2022-2024. All rights reserved.<br>To contact me use the <a href=contact.html>contact form</a> or <a href=mailto:notmyrealemail@ccsf.edu><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YWPS35WJS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4YWPS35WJS');
+</script>
+<title>CNIT132 Contact Form</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="main.css">
+
+<meta name="description" content="CCSF CNIT132 Intermediate HTML and CSS Contact Page for JRussell">
+
+<style>
+#myForm { background-color:#eaeaea;
+	font-family: Arial, sans-serif;
+	width:500px; }
+label { float: left;
+	width: 120px; 
+	text-align: right; 
+	padding-right: 10px;
+	margin-top: 10px; }
+input, textarea { margin-top: 10px; }
+#mySubmit { margin-left: 130px;
+           padding-bottom: 10px; }
+</style>
+
+</head>
+
+
+<body>
+<div class="grid" id="box"> 
+
+<header class="grid-area grid-area-1" id="header"><h1>CCSF CNIT132 Contact Me Page for JRussell</h1></header>
+<nav class="grid-area grid-area-2"> 
+<ul id="center"> 
+  <li><a href="index.html"> Home</a></li>
+  <li><a href="assignments.html"> Assignments</a></li>
+  <li><a href="wisdom.html"> Practical Wisdom</a></li>
+  <li><a href="contact.html"> Contact</a></li>
+
+</ul>
+</nav>
+
+<main class="grid-area grid-area-3"> 
+
+<p>If you would like to contact me, complete & submit this form.</p>
+
+<fieldset>
+  <legend>Contact Me</legend>
+<form method="post" id="myForm" >
+<div>
+  <label for="myName">Name:</label>
+  <input type="text" placeholder="your name" required name="myName" id="myName">
+</div>
+<div>
+  <label for="myEmail">E-mail:</label>
+  <input type="email" placeholder="email address" required name="myEmail" id="myEmail">
+</div>
+<div>
+  <label for="myComments">Comments:</label>
+  <textarea name="myComments" placeholder="tell me more ..." id="myComments" rows="2" cols="20"></textarea>
+</div>
+<div id="mySubmit">
+  <input type="submit" value="Submit">
+</div>
+</form>
+</fieldset>
+
+</main>
+<footer class="grid-area grid-area-4"  id="footer">Copyright J Russell 2022-2024.  All rights reserved. <br> 
+  To contact me use the <a href="contact.html">contact form</a> or <a href="mailto:notmyrealemail@ccsf.edu"><strong>email me</strong></a> (this email is intentionally invalid to avoid spam)</footer>
+
+</div>
+</body>
+<!-- TK - The fieldset attribute is in module 8, part 4 
+TODO: validate entry - if the form doesn't do this already 
+DONE: - make the light gray area match the size of the fieldset rectangle 
+DONE: add the placeholder text -->
+</html>
